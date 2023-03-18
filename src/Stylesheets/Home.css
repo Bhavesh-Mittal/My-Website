@@ -1,0 +1,178 @@
+:root {
+    overflow-x: hidden;
+}
+
+.homePage {
+    background-image: url('../assets/homePageImg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    border: 3px solid #f5f5f5;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    width: 60%;
+    height: 75%;
+}
+
+.homeDataContainer {
+    width: 55%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dataContainer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.helloContainer {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wavingHand {
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.moreAbout {
+    color: #4444ff;
+    text-decoration: none;
+}
+
+.arrow {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.moreAbout:hover {
+    color: #0000b9;
+}
+
+.homeImageContainer {
+    width: 45%;
+}
+
+.homeImg {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (min-width: 922px) and (max-width: 1600px) {
+    .homeContainer {
+        height: 55%;
+    }
+}
+
+@media only screen and (min-width: 513px) and (max-width: 786px) {
+    .homeContainer {
+        width: 65%;
+        height: 60%;
+    }
+    
+    .dataContainer {
+        font-size: 16px;
+    }
+
+    .helloContainer {
+        font-size: 23px;
+    }
+
+    .linkContainer {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 512px) and (min-height: 787px) and (max-height: 922px) {
+    .homeContainer {
+        height: 40%;
+        width: 70%;
+    }
+
+    .dataContainer {
+        font-size: 14px;
+    }
+
+    .helloContainer {
+        font-size: 21px;
+    }
+
+    .linkContainer {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 440px) and (min-height: 441px) and (max-height: 786px) {
+    .homeContainer {
+        height: 40%;
+        width: 65%;
+    }
+
+    .dataContainer {
+        font-size: 12px;
+    }
+
+    .helloContainer {
+        font-size: 19px;
+    }
+
+    .linkContainer {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-height: 923px) and (max-height: 1200px) {
+    .homeContainer {
+        height: 50%;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 440px) and (max-height: 440px) {
+    .homeContainer {
+        height: 60%;
+        width: 65%;
+    }
+
+    .dataContainer {
+        font-size: 10px;
+    }
+
+    .helloContainer {
+        font-size: 17px;
+    }
+
+    .linkContainer {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .homeDataContainer {
+        margin: 10px;
+    }
+}

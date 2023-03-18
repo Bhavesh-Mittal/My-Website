@@ -1,0 +1,80 @@
+.aboutCard {
+	margin: 30px;
+	width: 50%;
+	background-color: #f8f3f3;
+	border-radius: 10px;
+    padding-left: 20px;
+	padding-right: 20px;
+}
+
+.aboutCardTitle {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.aboutCardDescription {
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.aboutCardTitle {
+		font-size: 28px;
+	}
+
+	.aboutCardDescription {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 696px) {
+	.aboutCard {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.aboutCard {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.aboutCardTitle {
+		font-size: 24px;
+	}
+
+	.aboutCardDescription {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.aboutCardTitle {
+		font-size: 22px;
+	}
+
+	.aboutCardDescription {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	.aboutCardTitle {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.aboutCardTitle {
+		font-size: 18px;
+	}
+
+	.aboutCardDescription {
+		font-size: 14px;
+	}
+}
