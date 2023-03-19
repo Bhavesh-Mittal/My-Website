@@ -14,8 +14,8 @@ export default function Achievements() {
                 <AchievementCard image={ blueBlazer } title='School Blue Blazer' description='Awarded the school blue blazer twice (2019 & 2022) for scoring above 80% for three consecutive years' />
             </div>
             <div className='cardsContainer'>
-            <AchievementCard image='https://d3q0c4wmynnr7l.cloudfront.net/sof_logo-01_-_copy.jpg' title='SOF Olympiads' description={ <p>Participated in many olympiads hosted by <a href='https://www.sofworld.org' target='_blank'  rel='noreferrer'>Science Olympiad Foundation (SOF)</a> like IMO, IEO and NSO; winning gold and solver medals in IMO and NSO</p> } />
-                <AchievementCard image='https://www.ehfworld.com/ERP/logo3.png' title='EHF Olympiads' description={ <p>Took part in various olympiads held by <a href='https://www.eduhealfoundation.org/' target='_blank'  rel='noreferrer'>EduHeal Foundation (EHF)</a> including NIMO, IGKO and NSSO; winning a silver medal in NIMO</p> } />
+                <AchievementCard image='https://d3q0c4wmynnr7l.cloudfront.net/sof_logo-01_-_copy.jpg' title='SOF Olympiads' description={ <p>Participated in many olympiads hosted by <a href='https://www.sofworld.org' rel='noopener noreferrer'>Science Olympiad Foundation (SOF)</a> like IMO, IEO and NSO; winning gold and solver medals in IMO and NSO</p> } />
+                <AchievementCard image='https://www.ehfworld.com/ERP/logo3.png' title='EHF Olympiads' description={ <p>Took part in various olympiads held by <a href='https://www.eduhealfoundation.org/' rel='noopener noreferrer'>EduHeal Foundation (EHF)</a> including NIMO, IGKO and NSSO; winning a silver medal in NIMO</p> } />
             </div>
         </>
     );

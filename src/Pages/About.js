@@ -14,9 +14,9 @@ export default function About() {
                 </div>
                 <div className='aboutMeDataContainer'>
                     <div className='contactsContainer'>
-                        <a className='contactLink' href='https://github.com/Bhavesh-Mittal' target='_blank' rel='noreferrer'><BsGithub className='contactIcon' /></a>
-                        <a className='contactLink' href='https://www.linkedin.com/in/bhavesh-mittal-602a36254/' target='_blank' rel='noreferrer'><BsLinkedin className='contactIcon' /></a>
-                        <a className='contactLink' href='mailto:bhavesh.mittal2810@gmail.com' target='_blank' rel='noreferrer'><MdEmail className='contactIcon' /></a>
+                        <a className='contactLink' href='https://github.com/Bhavesh-Mittal' rel='noopener noreferrer'><BsGithub className='contactIcon' /></a>
+                        <a className='contactLink' href='https://www.linkedin.com/in/bhavesh-mittal-602a36254/' rel='noopener noreferrer'><BsLinkedin className='contactIcon' /></a>
+                        <a className='contactLink' href='mailto:bhavesh.mittal2810@gmail.com' rel='noopener noreferrer'><MdEmail className='contactIcon' /></a>
                     </div>
                     <AboutCard title='Personal Information'
                         point1={ <p>Full Name : Bhavesh Mittal</p> }

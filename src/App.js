@@ -1,20 +1,25 @@
-import Navbar from './Pages/Navbar';
-import About from './Pages/About';
-import Achievements from './Pages/Achievements';
-import Home from './Pages/Home';
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Navbar from './Pages/Navbar';
+import Loading from './Pages/Loading';
+import NotFound from './Pages/NotFound';
 
-function App() {
+const Home = lazy(() => import('./Pages/Home'));
+const About = lazy(() => import('./Pages/About'));
+const Achievements = lazy(() => import('./Pages/Achievements'));
+
+export default function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path='/' element={ <Home /> } />
-        <Route path='/about' element={ <About /> } />
-        <Route path='/achievements' element={ <Achievements /> } />
-      </Routes>
+      <Suspense fallback={ <Loading /> }>
+        <Routes>
+          <Route path='/' element={ <Home /> } />
+          <Route path='/about' element={ <About /> } />
+          <Route path='/achievements' element={ <Achievements /> } />
+          <Route path='*' element={ <NotFound /> } />
+        </Routes>
+      </Suspense>
     </>
   );
 }
-
-export default App;
